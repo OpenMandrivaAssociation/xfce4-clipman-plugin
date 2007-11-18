@@ -1,8 +1,7 @@
 Summary:	Clipboard history plugin for the Xfce panel
-Name:		xfce-clipman-plugin
+Name:		xfce4-clipman-plugin
 Version:	0.8.0
-Release:	%mkrel 2
-Epoch:		1
+Release:	%mkrel 1
 License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin
@@ -11,13 +10,14 @@ Requires:	xfce-panel >= 4.3.0
 BuildRequires:	xfce-panel-devel >= 4.3.0
 BuildRequires:	libxfcegui4-devel >= 4.3.90.2
 BuildRequires:	intltool
+Obsoletes:	xfce-clipman-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Clipboard history panel plugin for the Xfce Desktop Environment.
 
 %prep
-%setup -qn xfce4-clipman-plugin-%{version}
+%setup -q
 
 %build
 %configure2_5x
@@ -25,11 +25,11 @@ Clipboard history panel plugin for the Xfce Desktop Environment.
 
 %install
 rm -rf %{buildroot}
-%makeinstall
+%makeinstall_std
 
 #rm $RPM_BUILD_ROOT%{_libdir}/xfce4/panel-plugins/*.a
 
-%find_lang xfce4-clipman
+%find_lang %{name}
 
 %post
 %{update_menus}
@@ -40,7 +40,7 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files -f xfce4-clipman.lang
+%files -f %{name}.lang
 %defattr(-,root,root)
 %doc README ChangeLog COPYING AUTHORS
 %{_libdir}/xfce4/panel-plugins/*
