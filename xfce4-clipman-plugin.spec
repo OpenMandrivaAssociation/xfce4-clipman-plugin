@@ -11,6 +11,7 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	intltool
 Obsoletes:	xfce-clipman-plugin
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Clipboard history panel plugin for the Xfce Desktop Environment.
