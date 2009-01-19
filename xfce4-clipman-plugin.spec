@@ -6,10 +6,11 @@ License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin
 Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.bz2
-Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel >= 4.4.2
+BuildRequires:	exo-devel
 BuildRequires:	intltool
+Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-clipman-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
