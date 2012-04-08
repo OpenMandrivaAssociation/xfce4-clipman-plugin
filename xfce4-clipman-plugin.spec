@@ -9,7 +9,7 @@ Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-clipman-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
-BuildRequires:	libxfcegui4-devel >= 4.4.2
+BuildRequires:	libxfce4ui-devel >= 4.9.1
 BuildRequires:	exo-devel
 BuildRequires:	intltool
 Requires:	xfce4-panel >= 4.4.2
