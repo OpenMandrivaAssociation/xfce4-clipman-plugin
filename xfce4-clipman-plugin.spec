@@ -13,6 +13,7 @@ BuildRequires:	libxfce4ui-devel >= 4.9.1
 BuildRequires:	exo-devel
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(xtst)
+BuildRequires:	pkgconfig(unique-1.0)
 Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-clipman-plugin
 
@@ -36,9 +37,7 @@ Clipboard history panel plugin for the Xfce Desktop Environment.
 %{_sysconfdir}/xdg/autostart/xfce4-clipman-plugin-autostart.desktop
 %{_sysconfdir}/xdg/xfce4/panel/xfce4-clipman-actions.xml
 %{_bindir}/xfce4-*
-%{_libdir}/xfce4/panel-plugins/%{name}
-%{_datadir}/applications/xfce4-clipman-plugin.desktop
+%{_libdir}/xfce4/panel/plugins/*.so
+%{_datadir}/applications/xfce4-clipman.desktop
 %{_iconsdir}/hicolor/*/apps/*.*g
-%{_datadir}/xfce4/doc/*/images/*.*
-%{_datadir}/xfce4/doc/*/xfce4-clipman-plugin.html
-%{_datadir}/xfce4/panel-plugins/xfce4-clipman-plugin.desktop
+%{_datadir}/xfce4/panel/plugins/xfce4-clipman-plugin.desktop
