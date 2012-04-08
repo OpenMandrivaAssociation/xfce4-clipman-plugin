@@ -12,6 +12,7 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfce4ui-devel >= 4.9.1
 BuildRequires:	exo-devel
 BuildRequires:	intltool
+BuildRequires:	pkgconfig(xtst)
 Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-clipman-plugin
 
