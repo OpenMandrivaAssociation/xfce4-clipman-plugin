@@ -9,7 +9,7 @@ Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-clipman-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
-BuildRequires:	pkgconfig(libxfce4ui-1.0)
+BuildRequires:	pkgconfig(libxfce4ui-1)
 BuildRequires:	pkgconfig(exo-1)
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(xtst)
@@ -41,3 +41,4 @@ Clipboard history panel plugin for the Xfce Desktop Environment.
 %{_datadir}/applications/xfce4-clipman.desktop
 %{_iconsdir}/hicolor/*/apps/*.*g
 %{_datadir}/xfce4/panel/plugins/xfce4-clipman-plugin.desktop
+%{_datadir}/appdata/*
