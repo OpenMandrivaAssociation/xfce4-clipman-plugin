@@ -43,4 +43,5 @@ Clipboard history panel plugin for the Xfce Desktop Environment.
 %{_datadir}/applications/xfce4-clipman.desktop
 %{_iconsdir}/hicolor/*/apps/*.*g
 %{_datadir}/xfce4/panel/plugins/xfce4-clipman-plugin.desktop
+%{_datadir}/applications/xfce4-clipman-settings.desktop
 %{_datadir}/appdata/xfce4-clipman.appdata.xml
