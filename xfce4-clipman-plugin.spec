@@ -35,7 +35,7 @@ Clipboard history panel plugin for the Xfce Desktop Environment.
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc README.md ChangeLog COPYING AUTHORS
+%doc README.md COPYING AUTHORS
 %{_sysconfdir}/xdg/autostart/xfce4-clipman-plugin-autostart.desktop
 %{_sysconfdir}/xdg/xfce4/panel/xfce4-clipman-actions.xml
 %{_bindir}/xfce4-*
