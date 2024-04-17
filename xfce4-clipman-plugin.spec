@@ -3,12 +3,12 @@
 
 Summary:	Clipboard history plugin for the Xfce panel
 Name:		xfce4-clipman-plugin
-Version:	1.6.5
+Version:	1.6.6
 Release:	1
 License:	BSD
 Group:		Graphical desktop/Xfce
-URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin
-Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-clipman-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
+URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin
+Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-clipman-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	pkgconfig(libxfconf-0)
